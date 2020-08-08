@@ -1,18 +1,18 @@
-let money = 150000;
-let income = 'work';
-let addExpenses = 'taxi, internet, phone';
-let deposit = true;
-let mission = 1000000;
-let period = 6;
-let budgetDay = 50000;
 
-console.log(typeof money);
-console.log(typeof income);
-console.log(typeof deposit);
-console.log(addExpenses.length);
-console.log(period + ' месяцев ' + mission);
+let num = 266219;
+num = new String("266219");
+console.log(num);
 
-console.log(addExpenses.toLowerCase());
-console.log(addExpenses.split(' '));
+console.log(typeof num);
+console.log(num.split(''));
 
-console.log(Math.floor (budgetDay / 30));
+
+let result = 1;
+for (let i = 0; i < num.length; i++){
+    result = result * num[i];
+}
+console.log(result);
+
+let newResult = result ** 3;
+String(newResult).slice(0,2);
+console.log(Math.floor(newResult / 100000000));
